@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#form{
+  background-color:rgb(192, 192, 159);
+  width:500px;
+  margin-left:350px;
+  text-align: left;
+
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width:500px;
+}
