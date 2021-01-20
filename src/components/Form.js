@@ -29,12 +29,12 @@ class Form extends React.Component {
         console.log(this.state);
   
         let input = {};
-        input["name"] = "";
+        input["password"] = "";
         input["email"] = "";
         var correct=false;
         this.setState({input:input});
         {User.map((User, index)=>{
-          if(document.getElementById('name').value==User.password && document.getElementById('email').value==User.email ){
+          if(document.getElementById('password').value==User.password && document.getElementById('email').value==User.email ){
             correct=true;
           }else 
             alert("incorrect email or password!")
@@ -54,9 +54,9 @@ class Form extends React.Component {
       let errors = {};
       let isValid = true;
   
-      if (!input["name"]) {
+      if (!input["password"]) {
         isValid = false;
-        errors["name"] = "Please enter your name.";
+        errors["password"] = "Please enter your password.";
       }
   
       if (!input["email"]) {
@@ -89,15 +89,15 @@ class Form extends React.Component {
         <form onSubmit={this.handleSubmit}>
   
           <div class="form-group">
-            <label for="name">Password:</label>
+            <label for="password">Password:</label>
             <input 
               type="password" 
-              name="name" 
+              name="password" 
               value={this.state.input.name}
               onChange={this.handleChange}
               class="form-control" 
-              placeholder="Enter name" 
-              id="name" />
+              placeholder="Enter password" 
+              id="password" />
 
               <div className="text-danger">{this.state.errors.name}</div>
           </div>

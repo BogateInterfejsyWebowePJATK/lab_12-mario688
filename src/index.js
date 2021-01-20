@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+import Home from './components/Home'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-
-  
-import Form from './components/Form';
-  
 ReactDOM.render(
   <React.StrictMode>
-    <div className="container">
-       <Form />
-    </div>
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
-  
+
+
